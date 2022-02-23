@@ -1,9 +1,11 @@
 // This file will define the jet class
 
-#include <iostream>
+#ifndef HELICOPTER_H
+#define HELCOPTER_H
 #include "Aircraft.h"
-using namespace std;
 
 class Jet {
 
 };
+
+#endif
