@@ -11,6 +11,31 @@ using namespace std;
 // No tests needed for get methods, they are already covered in the change method tests.
 // This is due to the fac that we make the get calls within the tests. 
 
+
+//Initialization Test
+//We use the default constructor and check through all strings to ensure that they are at their default values
+string test_initilaization(){
+    Aircraft sampleAircraft = Aircraft();
+    if(sampleAircraft.getName() != "Generic Aircraft"){
+        return "Generic Initialization failed while retreiving the aircraft name.";
+    }
+    else if (sampleAircraft.getEngine() != "Generic Engine"){
+        return "Generic Initialization failed while retreiving the aircraft engine.";
+    }
+    else if (sampleAircraft.getManufacturer() != "Generic Manufacturer"){
+        return "Generic Initialization failed while retreiving the aircraft manufacturer.";
+    }
+    else if (sampleAircraft.getMaxAltitude() !=  10000){
+        return "Generic Initialization failed while retreiving the aircraft service ceiling";
+    }
+    else if (sampleAircraft.getNotes() != "Nothing to See here"){
+        return "Generic Initialization failed while retreiving the aircraft notes";
+    }
+    else{
+        return "Generic Initialization Success!";
+    }
+}
+
 //Testing changeName
 string test_getNameAfterChange(){
     Aircraft sampleAircraft = Aircraft();
@@ -79,6 +104,7 @@ string test_getNotesAfterChange(){
 //Running all of the above tests
 int main()
 {
+    cout << test_initilaization() << endl;
     cout << test_getNameAfterChange() << endl;
     cout << test_getEngineAfterChange() << endl;
     cout << test_getManufacturerAfterChange() << endl;

@@ -1,5 +1,5 @@
 /*
-    This file constructs the properties of the Aircraft class. 
+    This file defines the methods and constructors of the Aircraft Class
 */
 
 #include <iostream>
