@@ -50,6 +50,7 @@ _Windows users should install [WSL](https://docs.microsoft.com/en-us/windows/wsl
 
 # Additional Information
 Compiled in a Linux Mint environment utilizing g++ version 9.3.0
+
 Developed via Visual Studio Code. 
 
 Suggestions and issues should be created in the [issues](https://github.com/devEricA/theCplusplusHangar/issues) tab of this repo. 
