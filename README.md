@@ -43,7 +43,7 @@ _Windows users should install [WSL](https://docs.microsoft.com/en-us/windows/wsl
 - If not installed, visit one of these bulletins for installation
     - [MacOS](http://www.edparrish.net/common/macgpp.php)
     - [Linux & Windows WSL Users](https://linuxhint.com/install-g-compiler-on-ubuntu/)   
-        - Commands that use <code>sudo apt</code> may differ depend on what distribution and package manager you are using. 
+        - Commands that use <code>sudo apt</code> may differ depending on what distribution and package manager you are using. 
 2. Type <code>g++ HangarMain.cpp</code>, then hit Enter. 
 3. Type <code>a.out</code>, then hit Enter. 
 4. You should then see output that displays the hangars and all aircraft that are within each one. 
