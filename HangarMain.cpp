@@ -5,11 +5,7 @@
 */
 
 #include <iostream>
-#include "Hangar.h"
-#include "Aircraft.h"
-#include "Aircraft.cpp"
-#include "Jet.h"
-#include "Helicopter.h"
+#include "Classes_and_Headers/Aircraft.cpp"
 using namespace std;
 
 int main()
