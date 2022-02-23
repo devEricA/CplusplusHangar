@@ -16,6 +16,7 @@ The specifications for the hangar and aircraft are as follows.
     - String Engine
     - String Manufacturer
     - Integer MaxAltitude
+    - String Notes
 
 - Jet
     - Extension of Aircraft
@@ -34,3 +35,5 @@ When the program runs, The name of the hangar must be displayed first, followed 
 # Additional Information
 Compiled in a Linux Mint environment utilizing g++ version 9.3.0
 Developed via Visual Studio Code. 
+
+Suggestions should be created in the [issues](https://github.com/devEricA/theCplusplusHangar/issues) tab of this repo. 
