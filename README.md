@@ -2,7 +2,7 @@
 A simple project demonstrating my experience with C++. This is a work in progress.
 
 # Problem
-C++ is one of the most sought after languages in the job market. While I have programmed in C++ before, none of my public projects use it, and thus, the only proof I had was my word. 
+C++ is one of the most sought after languages in the job market. While I have programmed in C++ before, none of my public projects use it. 
 
 # Objective
 Use C++ to create a program that displays aircraft stored in hangars. 
