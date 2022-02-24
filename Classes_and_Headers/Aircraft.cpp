@@ -1,5 +1,5 @@
 /*
-    This file constructs the properties of the Aircraft class. 
+    This file defines the methods and constructors of the Aircraft Class
 */
 
 #include <iostream>
@@ -117,6 +117,8 @@ void Aircraft::setNotes(string newNotes){
 }
 
 //Method to print all details of the aircraft 
+//Needed because C++ does not have the cleanest ability to conduct custom 'toString()' methods 
+//Each custom 'toString() 'requires the use of streams. 
 string Aircraft::all_details(){
-    return "Name :: " + getName() + "\nEngine :: " + getEngine() + "\nManufacturer :: " + getManufacturer() + "\nService Ceiling :: " +   + " ft\n Notes ::" + getNotes() + "\n";
+    return "Name :: " + getName() + "\nEngine :: " + getEngine() + "\nManufacturer :: " + getManufacturer() + "\nService Ceiling :: " + to_string(getMaxAltitude()) + " ft\nNotes :: " + getNotes() + "\n";
 }
