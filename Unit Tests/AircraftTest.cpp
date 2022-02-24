@@ -14,7 +14,8 @@ using namespace std;
 
 //Initialization Test
 //We use the default constructor and check through all strings to ensure that they are at their default values
-string test_initilaization(){
+//We also use this test to ensure all_details is working ok. 
+string test_initialization(){
     Aircraft sampleAircraft = Aircraft();
     if(sampleAircraft.getName() != "Generic Aircraft"){
         return "Generic Initialization failed while retreiving the aircraft name.";
@@ -32,7 +33,7 @@ string test_initilaization(){
         return "Generic Initialization failed while retreiving the aircraft notes";
     }
     else{
-        return "Generic Initialization Success!";
+        return "Generic Initialization Success!\nHere are the aircraft's properties\n" + sampleAircraft.all_details() + "\n";
     }
 }
 
@@ -98,13 +99,12 @@ string test_getNotesAfterChange(){
     else{
         return "setNotes Mission Failure";
     }
-
 }
 
 //Running all of the above tests
 int main()
 {
-    cout << test_initilaization() << endl;
+    cout << test_initialization() << endl;
     cout << test_getNameAfterChange() << endl;
     cout << test_getEngineAfterChange() << endl;
     cout << test_getManufacturerAfterChange() << endl;

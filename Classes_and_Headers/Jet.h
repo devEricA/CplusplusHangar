@@ -9,12 +9,12 @@ class Jet : public Aircraft {
     private:
     //Specified variables exclusive to this class
     string wingshape;
-    bool isStealth;
+    bool Stealth;
 
     //Specified constructors for Jet
     //Necessary due to the addition of wingshape and isstealth parameters
     public:
-    Jet():Aircraft(){};
+    Jet();
     Jet(string n);
     Jet(string n, string e);
     Jet(string n, string e, string m);
@@ -26,6 +26,9 @@ class Jet : public Aircraft {
     //Prototypes of methods to alter wingshape and stealth. 
     string getWingShape();
     bool isStealth();
+    void setWingShape(string ns);
+    void changeStealth();
+    string all_details();
 
 
 };
