@@ -64,7 +64,7 @@ string test_getStealthAfterChange(){
 }
 
 
-//Reconducting tests to double check that the inheritance didn't break anything
+//Reconducting Aircraft class tests to double check that the inheritance didn't break anything
 //Testing changeName
 string test_getNameAfterChange(){
     Jet sampleJet = Jet();
