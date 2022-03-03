@@ -4,7 +4,7 @@
 #define JET_H
 #include "Aircraft.h"
 
-class Jet : public Aircraft {
+class Jet : public virtual Aircraft {
 
     private:
     //Specified variables exclusive to this class

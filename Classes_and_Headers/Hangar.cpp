@@ -3,9 +3,7 @@
 */
 
 #include <iostream>
-#include <algorithm>
 #include "Hangar.h"
-#include "Aircraft.cpp"
 #include "Jet.cpp"
 #include "Helicopter.cpp"
 using namespace std;
@@ -44,7 +42,11 @@ void Hangar::printAircraftDetails(Aircraft A){
 
 //Displays all of the details stored in the Aircraft hangar
 void Hangar::displayAllAircraft(){
-    for_each(AircraftStored.begin(), AircraftStored.end(), printAircraftDetails);
+    for(Aircraft aiv: AircraftStored)
+    {
+        cout << aiv.all_details() << endl;
+    }
+
 }
 
 //Adds an Aircraft to the hangar
@@ -60,6 +62,7 @@ string Hangar::all_Hdetails(){
     {
         allPossibleDetails += aiv.all_details() + "\n";
     }
+    return allPossibleDetails;
 }
 
 
