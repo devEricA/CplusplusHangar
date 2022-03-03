@@ -1,5 +1,5 @@
 # C++Hangar
-A simple project demonstrating my experience with C++. This is a work in progress.
+A simple project demonstrating my experience with C++. 
 
 # Problem
 C++ is one of the most sought after languages in the job market. While I have programmed in C++ before, none of my public projects use it. 
