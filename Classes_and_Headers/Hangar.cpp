@@ -33,21 +33,6 @@ string Hangar::getName(){
     return Name;
 }
 
-//Prints the details of an aircraft
-//Used as a helper for the displayAllAircraft function below this one
-void Hangar::printAircraftDetails(Aircraft A){
-    cout << A.all_details() << endl;
-}
-
-//Displays all of the details stored in the Aircraft hangar
-void Hangar::displayAllAircraft(){
-    for(Aircraft aiv: AircraftStored)
-    {
-        cout << aiv.all_details() << endl;
-    }
-
-}
-
 //Adds an Aircraft to the hangar
 void Hangar::addAircraft(Aircraft A){
     AircraftStored.push_back(A);
@@ -57,9 +42,9 @@ void Hangar::addAircraft(Aircraft A){
 //Gets all of the details of the Hangar
 string Hangar::all_Hdetails(){
     string allPossibleDetails = "Hangar Name:: " + getName() + "\nAircraft Stored\n";
-    for(Aircraft aiv: AircraftStored)
+    for(int x = 0; x<AircraftStored.size(); x++)
     {
-        allPossibleDetails += aiv.all_details() + "\n";
+        allPossibleDetails += AircraftStored[x].all_details() + "\n";
     }
     return allPossibleDetails;
 }

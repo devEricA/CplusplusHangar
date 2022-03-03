@@ -265,5 +265,5 @@ void Helicopter::changeRotorType(string newRotors){
 
 // All details method
 string Helicopter::all_details(){
-    return Aircraft::all_details() + "\nRotors :: " + getRotorType() +"\nNotes :: " + getNotes() + "\n";
+    return Aircraft::all_details() + "\nRotors :: " + getRotorType();
 }

@@ -24,10 +24,7 @@ class Hangar{
 
     //Methods that will come in Handy
     string getName();
-    void printAircraftDetails(Aircraft A);
-    void displayAllAircraft();
     void addAircraft(Aircraft A);
-    string concatenateDetails(string s, Aircraft A);
     string all_Hdetails();
     
 
