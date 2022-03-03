@@ -4,8 +4,7 @@
 
 #include <iostream>
 #include "Hangar.h"
-#include "Jet.cpp"
-#include "Helicopter.cpp"
+#include "Aircraft.cpp"
 using namespace std;
 
 //Default constructor

@@ -5,7 +5,7 @@
 */
 
 #include <iostream>
-#include "../Classes_and_Headers/Helicopter.cpp"
+#include "../Classes_and_Headers/Aircraft.cpp"
 using namespace std;
 
 //Initialization Test

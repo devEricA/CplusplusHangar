@@ -4,7 +4,7 @@
 #define HELICOPTER_H
 #include "Aircraft.h"
 
-class Helicopter: public virtual Aircraft{
+class Helicopter: public Aircraft{
 
     private:
     //Specified variable exclusive to this class
