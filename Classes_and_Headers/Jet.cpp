@@ -90,5 +90,5 @@ void Jet::changeStealth(){
 
 //Overriding the all_details method so we can include the properties exclusive to Jet
 string Jet::all_details(){
-    return "Name :: " + getName() + "\nEngine :: " + getEngine() + "\nManufacturer :: " + getManufacturer() + "\nService Ceiling :: " + to_string(getMaxAltitude()) + " ft\nWingshape :: " + getWingShape() + "\nStealth :: " + to_string(isStealth()) +"\nNotes :: " + getNotes() + "\n";
+    return Aircraft::all_details() + " ft\nWingshape :: " + getWingShape() + "\nStealth :: " + to_string(isStealth()) +"\nNotes :: " + getNotes() + "\n";
 }

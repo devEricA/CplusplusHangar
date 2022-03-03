@@ -57,5 +57,5 @@ void Helicopter::changeRotorType(string newRotors){
 
 // All details method
 string Helicopter::all_details(){
-    return "Name :: " + getName() + "\nEngine :: " + getEngine() + "\nManufacturer :: " + getManufacturer() + "\nService Ceiling :: " + to_string(getMaxAltitude()) + " ft\nRotors :: " + getRotorType() +"\nNotes :: " + getNotes() + "\n";
+    return Aircraft::all_details() + "\nRotors :: " + getRotorType() +"\nNotes :: " + getNotes() + "\n";
 }
